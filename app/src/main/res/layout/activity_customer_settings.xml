@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerSettingsActivity"
+    android:orientation="vertical"
+    android:padding="20sp">
+
+    <ImageView
+        android:id="@+id/ProfileImage"
+        android:layout_width="70sp"
+        android:layout_height="100sp"
+        android:layout_gravity="right"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_profile_image"
+        android:layout_marginBottom="10sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="שם מלא"
+        android:id="@+id/Name"
+        android:layout_margin="20sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="מספר פלאפון"
+        android:id="@+id/Phone"
+        android:layout_margin="20sp"
+        android:inputType="number"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Confirm"
+        android:text="שמור שינויים"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Back"
+        android:text="ביטול"/>
+
+</LinearLayout>
